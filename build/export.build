@@ -1,0 +1,6 @@
+$out_root/
+{
+  include magic_enum/
+}
+
+export $out_root/magic_enum/$import.target

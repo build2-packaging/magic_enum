@@ -1,0 +1,16 @@
+: 1
+name: magic_enum
+version: 0.7.2
+summary: Static reflection for enums (to string, from string, iteration) for modern C++, work with any enum type without any macro or boilerplate code
+license: MIT License
+topics: Enum, reflection
+keywords: C++17 enum reflection serialization
+description-file: upstream/README.md
+src-url: https://github.com/Neargye/magic_enum
+doc-url: https://github.com/Neargye/magic_enum/blob/master/doc/reference.md
+package-email: wmbat@protonmail.com
+
+requires: c++ >= 17
+
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
