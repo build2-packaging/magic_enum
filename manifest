@@ -14,3 +14,5 @@ requires: c++ >= 17
 
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
+
+build-exclude: windows_10_devmode-msvc_16.4 ; Builds but some tests fails, use at your own risks.
