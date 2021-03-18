@@ -1,3 +1,6 @@
 import libs = magic_enum%lib{magic_enum}
 
-exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
+cxx.poptions += "-I$src_root/3rdparty/Catch2"
+
+./: exe{driver_test}: test/{cxx}{test} $src_root/3rdparty/Catch2/hxx{**} $libs
+./: exe{driver_test_flags}: test/{cxx}{test_flags} $src_root/3rdparty/Catch2/hxx{**} $libs
