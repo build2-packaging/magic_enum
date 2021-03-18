@@ -3,8 +3,8 @@ import libs = magic_enum%lib{magic_enum}
 
 cxx.poptions += "-I$src_base/upstream_test/3rdparty/Catch2"
 
-./: exe{driver_test}: upstream_test/{cxx}{test} upstream_test/hxx{**} $libs
+./: exe{test}: upstream_test/{cxx}{test} upstream_test/hxx{**} $libs
 
-./: exe{driver_test_flags}: upstream_test/{cxx}{test_flags} upstream_test/hxx{**} $libs
+./: exe{test_flags}: upstream_test/{cxx}{test_flags} upstream_test/hxx{**} $libs
 
 
