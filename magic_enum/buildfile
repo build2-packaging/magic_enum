@@ -31,6 +31,6 @@ lib{magic_enum}:
 #
 {hxx ixx txx}{*}:
 {
-  install         = include/magic_enum/
+  install         = $install.root
   install.subdirs = true
 }
