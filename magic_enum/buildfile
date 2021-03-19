@@ -2,7 +2,7 @@ intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
 #import impl_libs += libhello%lib{hello}
 
-lib{magic_enum}: {hxx}{**} hxx{version} $impl_libs $intf_libs
+lib{magic_enum}: {hxx}{**} $impl_libs $intf_libs
 
 # Build options.
 #
