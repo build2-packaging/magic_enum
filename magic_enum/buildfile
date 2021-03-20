@@ -22,5 +22,4 @@ lib{magic_enum}:
 {hxx ixx txx}{*}:
 {
   install         = include/
-  install.subdirs = true
 }
