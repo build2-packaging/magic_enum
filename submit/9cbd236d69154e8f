@@ -1,0 +1,5 @@
+: 1
+name: magic_enum-tests
+version: 0.7.3
+summary: magic_enum tests
+license: MIT License
