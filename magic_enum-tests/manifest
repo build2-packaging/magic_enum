@@ -17,6 +17,4 @@ depends: * bpkg >= 0.13.0
 
 depends: catch2 ^2.13.6
 
-builds: all
 builds: all : &gcc-9+
-builds: all : &clang-5+
