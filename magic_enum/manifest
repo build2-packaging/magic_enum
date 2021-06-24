@@ -5,7 +5,7 @@ summary: Static reflection for enums (to string, from string, iteration) for mod
 license: MIT License
 topics: Enum, reflection
 keywords: C++17 enum reflection serialization
-description-file: upstream/README.md
+description-file: README.md
 src-url: https://github.com/Neargye/magic_enum
 doc-url: https://github.com/Neargye/magic_enum/blob/master/doc/reference.md
 package-email: wmbat@protonmail.com
@@ -14,5 +14,3 @@ requires: c++ >= 17
 
 depends: * build2 >= 0.13.0
 depends: * bpkg >= 0.13.0
-
-build-exclude: windows_10_devmode-msvc_16.4 ; Builds but some tests fails, use at your own risks.

@@ -1,0 +1,5 @@
+import libs = magic_enum%lib{magic_enum}
+import libs += catch2%lib{catch2}
+
+./: exe{test}: tests_src/{cxx}{test} tests_src/hxx{**} $libs
+./: exe{test_flags}: tests_src/{cxx}{test_flags} tests_src/hxx{**} $libs

@@ -1,5 +1,3 @@
-./: {*/ -build/ -upstream/} upstream/doc{README.md LICENSE} doc{README.md LICENSE} manifest
+import pkgs = {magic_enum*/}
 
-# Don't install tests.
-#
-tests/: install = false
+./: $pkgs

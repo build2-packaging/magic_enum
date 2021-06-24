@@ -1,0 +1,18 @@
+: 1
+name: magic_enum-test
+version: 0.7.3
+summary: unit tests for the magic_enum library
+license: MIT License
+topics: Enum, reflection, test
+keywords: C++17 enum reflection serialization test
+description-file: README.md
+src-url: https://github.com/Neargye/magic_enum
+doc-url: https://github.com/Neargye/magic_enum/blob/master/doc/reference.md
+package-email: wmbat@protonmail.com
+
+requires: c++ >= 17
+
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+
+depends: catch2 ^2.13.6

@@ -1,0 +1,24 @@
+intf_libs = # Interface dependencies.
+impl_libs = # Implementation dependencies.
+
+lib{magic_enum}: {hxx}{**} $impl_libs $intf_libs
+
+# Build options.
+#
+cxx.poptions =+ "-I$out_root" "-I$src_root" "-I$src_base/include"
+
+# Export options.
+#
+lib{magic_enum}:
+{
+  cxx.export.poptions = "-I$out_root" "-I$src_root" "-I$src_base/include"
+  cxx.export.libs = $intf_libs
+}
+
+# Install into the magic_enum/ subdirectory of, say, /usr/include/
+# recreating subdirectories.
+#
+{hxx ixx txx}{*}:
+{
+  install         = include/
+}
