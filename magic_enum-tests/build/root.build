@@ -12,4 +12,3 @@ cxx{*}: extension = cpp
 test.target = $cxx.target
 
 exe{*}: test=true # All executables in this package are tests.
-
