@@ -1,5 +1,6 @@
-project = # Unnamed tests subproject.
+project = magic_enum-tests
 
 using config
 using test
 using dist
+using version

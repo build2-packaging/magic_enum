@@ -1,5 +1,5 @@
 : 1
-name: magic_enum-test
+name: magic_enum-tests
 version: 0.7.3
 summary: unit tests for the magic_enum library
 license: MIT License
