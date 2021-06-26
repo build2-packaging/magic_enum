@@ -1,6 +1,7 @@
 : 1
 name: magic_enum-tests
-version: 0.7.3
+version: 0.7.3+1
+project: magic_enum
 summary: magic_enum tests
 license: MIT License
 topics: Enum, reflection, test, tests
