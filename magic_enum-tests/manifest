@@ -1,6 +1,6 @@
 : 1
 name: magic_enum-tests
-version: 0.8.2
+version: 0.9.0
 project: magic_enum
 summary: magic_enum tests
 license: MIT License
