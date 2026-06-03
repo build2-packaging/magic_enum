@@ -1,5 +1,11 @@
 import libs = magic_enum%lib{magic_enum}
 import libs += catch2%lib{catch2}
 
-./: exe{test}: tests_src/{cxx}{test} tests_src/hxx{**} $libs
-./: exe{test_flags}: tests_src/{cxx}{test_flags} tests_src/hxx{**} $libs
+for t : tests_src/cxx{* -test_nonascii}
+{
+  n = $name($t)
+  ./: exe{$n}: $t tests_src/hxx{**} $libs
+}
+
+./: exe{test_nonascii}: include = ($cxx.id == 'gcc')
+exe{test_nonascii}: tests_src/cxx{test_nonascii} tests_src/hxx{**} $libs
